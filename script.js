@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.title = companyName + " - About Us";
   document.getElementById("title").textContent = companyName;
 
-  // Dynamically inject the "About Us" section content
+  // using DOM inject the "About Us" section content
   const aboutSection = document.getElementById("about-section");
 
   const heading = document.createElement("h2");
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   aboutSection.appendChild(valuesList);
 
-  // Add image gallery dynamically
+  // Add image gallery using DOM
   const imageGallery = document.getElementById("image-gallery");
 
   const images = [
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imageGallery.appendChild(img);
   });
 
-  // Add co-founders section dynamically
+  // Add co-founders section by DOM
   const coFoundersSection = document.getElementById("co-founders-section");
 
   const coFoundersHeading = document.createElement("h2");
@@ -99,17 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const coFounders = [
     {
-      name: "John Doe",
+      name: "Chalier Ben",
       role: "Chief Executive Officer",
       imgSrc: "../Dom manipulation/images/man1.jpg"
     },
     {
-      name: "Jane Smith",
+      name: "Tasha Smith",
       role: "Chief Operations Officer",
       imgSrc: "../Dom manipulation/images/elegant omyy.png"
     },
     {
-      name: "Emily Brown",
+      name: "Blessing Brown",
       role: "Chief Marketing Officer",
       imgSrc: "../Dom manipulation/images/woman1.jpg"
     }
